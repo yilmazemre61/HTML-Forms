@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- This 'lang' represents the language that we will use-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- It covers all the characters and symbols-->
+    <!-- meta tag is for responsive design. It displays the page on all the devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the title will be displayed on the browser tab-->
+    <title>Emre's Pizza</title>
+    <!-- the content of my html, the description of the page-->
+    <meta name="description" content="Ordering a pizza">
+    <!-- this is for the search engines -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- The link to my stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- This nav element will contain the menu-->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">ABOUT US</a></li>
+                <li><a href="index.html">GALLERY</a></li>
+                <li><a href="index.html">MENU / ORDER ONLINE</a></li>
+                <li><a href="index.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- It is a brief about the restaurant-->
+        <hr>
+        <section id="text">
+            <h1>EXCLUSIVELY FRESH INGREDIENTS</h1>
+            <p>In our kitchen we make sure that the dishes are prepared only from the highest quality
+                products. Thanks
+                to this, our pizza is a delicacy that can not be resisted!</p>
+        </section>
+        <!-- This section will contain the forms I divided my forms into two different form-->
+        <section>
+            <!-- First 'form' will contain the menu - order details-->
+            <hr>
+            <form method="POST" action="somefile.php" id="firts-form">
+                <h2>Order Online</h2>
+                <p><i>Let's Prepare Your Delicious Pizza</i></p>
+                <!-- It will display the Menus -->
+                <div>
+                    <p>
+                        <label for="menu">Please Select the Type of Your Pizza</label>
+                        <select name="menu" id="menu">
+                            <option value="select">Select</option>
+                            <option value="neapolitan">Neapolitan Pizza - 7.99$</option>
+                            <option value="chicago">Chicago Pizza - 8.99$</option>
+                            <option value="new-york-style">New York-Style Pizza - 9.99$</option>
+                            <option value="sicilian">Sicilian Pizza - 10.99$</option>
+                            <option value="greek">Greek Pizza - 11.99$</option>
+                            <option value="california">California Pizza - 12.99$</option>
+                            <option value="detroit">Detroit Pizza - 13.99$</option>
+                            <option value="st.-louis">St. Louis Pizza - 14.99$</option>
+                        </select>
+                    </p>
+                </div>
+                <!-- This is for toppings-->
+                <div>
+                    <p>Select Your Toppings</p>
+                    <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni">
+                    <label>Pepperoni</label>
+                    <input type="checkbox" name="toppings" id="beef" value="beef">
+                    <label>Beef</label>
+                    <input type="checkbox" name="toppings" id="chicken" value="chicken">
+                    <label>Chicken</label>
+                    <input type="checkbox" name="toppings" id="ham" value="ham">
+                    <label>Ham</label>
+                    <input type="checkbox" name="toppings" id="olives" value="olives">
+                    <label>Olives</label>
+                    <input type="checkbox" name="toppings" id="onion" value="onion">
+                    <label>Onion</label>
+                    <input type="checkbox" name="toppings" id="pepper" value="pepper">
+                    <label>Pepper</label>
+                    <input type="checkbox" name="toppings" id="sweet-corn" value="sweet-corn">
+                    <label>Sweet Corn</label>
+                    <input type="checkbox" name="toppings" id="spinach" value="spinach">
+                    <label>Spinach</label>
+                    <input type="checkbox" name="toppings" id="tomatoes" value="tomatoes">
+                    <label>Tomatoes</label>
+                    <input type="checkbox" name="toppings" id="steak" value="steak">
+                    <label>Steak</label>
+
+                </div>
+                <!-- This is for the quantity of the menu-->
+                <div>
+                    <p>
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="quantity" id="quantity" min="1" required>
+                    </p>
+                </div>
+                <!-- This is for the size of the menu-->
+                <!-- I used the 'radio' -->
+                <div>
+                    <p>Select the Size of Your Pizza</p>
+                    <input type="radio" id="small" name="size" value="small">
+                    <label>Small</label>
+                    <input type="radio" id="medium" name="size" value="medium">
+                    <label>Medium + 1.99$</label>
+                    <input type="radio" id="large" name="size" value="large">
+                    <label>Large + 3.99$</label>
+                    <input type="radio" id="extra-large" name="size" value="extra-large">
+                    <label>Extra Large + 5.99$</label>
+                </div>
+                <!-- This is for the drinks-->
+                <!-- I used the 'radio' -->
+                <div>
+                    <p>Select Your Drink</p>
+                    <input type="radio" name="drink" id="cola" value="cola" required>
+                    <label>CocaCola</label>
+                    <input type="radio" name="drink" id="sprite" value="sprite" required>
+                    <label>Sprite</label>
+                    <input type="radio" name="drink" id="fanta" value="fanta" required>
+                    <label>Fanta</label>
+                    <input type="radio" name="drink" id="orangejuice" value="orangejuice" required>
+                    <label>Orange Juice</label>
+
+                </div>
+                <!-- This is for extra sauce-->
+                <!-- I used the 'checkbox' -->
+                <div>
+                    <p>Select Your Extra Sauce</p>
+                    <input type="checkbox" name="sauce" id="mayo" value="mayo">
+                    <label>Mayonnaise</label>
+                    <input type="checkbox" name="sauce" id="ketchup" value="ketchup">
+                    <label>Ketchup</label>
+                    <input type="checkbox" name="sauce" id="barbecue-sauce" value="barbecue-sauce">
+                    <label>Barbecue Sauce</label>
+                    <input type="checkbox" name="sauce" id="garlic-mayo" value="garlic-mayo">
+                    <label>Garlic-Mayonnaise</label>
+                </div>
+                <!-- 'Reset' button-->
+                <div>
+                    <p>
+                        <button type="reset">Reset</button>
+                    </p>
+                </div>
+                <!-- 'Submit' button-->
+                <div>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </div>
+            </form>
+            <!-- Second 'form' will contain the contact details-->
+            <!-- Customer's information (name-lastname-email-number-address-message)-->
+            <hr>
+            <form method="POST" action="somefile.php" id="second-form">
+                <h2>Customer Info</h2>
+                <div>
+                    <p>
+                        <label for="name">First Name : </label>
+                        <input type="text" name="name" id="name" maxlength="30" placeholder="First Name" required>
+                        <label for="lastname">Last Name : </label>
+                        <input type="text" name="lastname" id="lastname" maxlength="50" placeholder="Last Name"
+                            required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="email">E-mail : </label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <label for="phone">Phone Number : </label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                            placeholder="Phone Number" required>
+                    </p>
+                </div>
+                <!-- The 'textarea' where we can type comments -->
+                <div>
+                    <p>Any Special Requests?</p>
+                    <textarea name="request" id="request" cols="30" rows="10"
+                        placeholder="Any Special Request?"></textarea>
+
+                </div>
+                <!-- 'reset' button-->
+                <div>
+                    <p>
+                        <button type="reset">Reset</button>
+                    </p>
+                </div>
+                <!-- 'submit' button-->
+                <div>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </div>
+
+
+
+            </form>
+        </section>
+    </main>
+    <!-- This is the 'footer' element -->
+    <hr>
+    <footer>
+        <p>Emre's Pizza</p>
+        <p>emre's pizza &copy;2021</p>
+        <p>Contact : +1-613-555-0117</p>
+    </footer>
+</body>
+
+</html>

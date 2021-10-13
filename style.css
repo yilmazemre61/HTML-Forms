@@ -1,0 +1,85 @@
+/* This is a default setup for my body */
+body{
+    margin: 0px;
+    /* This will display an image in the backgound of the body */
+    background-image: url(./images/image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* This will set a default settings for p and a tags */
+p , a {
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+/* This will set a default settings for h1,h2,h3,h4,h5,h6 tags  */
+h1,h2,h3,h4,h5,h6{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+}
+/* I defined a fix height for the header */
+header{
+    height: 200px;
+}
+/* This will move the nav to the right of the page  */
+header > nav{
+    float: right;
+    clear: right;
+}
+/* This will remove the dots from the ul list */
+header > nav > ul{
+    list-style: none;
+}
+/* Inside the ul list we have li elements these are the settings; padding, margin and float  */
+header > nav > ul > li{
+    float: left;
+    font-weight: 700;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 50px;
+    padding-right: 3px;
+    margin: 50px 20px;
+}
+/* I used the 'hover' selector so when we point the cursor on the nav element it will change the color of the text  */
+header > nav > ul > li > a:hover{
+    color: red;
+    transition: 1.2s;
+}
+header > nav > ul > li > a{
+    color: white;
+}
+/* I assigned an id to make specific changes for my text */
+#text{
+    text-align: center;
+    color: white;
+    height: 700px;
+    padding-top: 100px;
+}
+ form > p{
+    color: white;
+}
+form > div > p{
+    color: white;
+}
+form > div > label{
+    color: white;
+}
+/* Another 'hover' selector for 'submit' and 'reset' buttons */
+form > div > p > button:hover{
+    color: white;
+    background-color: red;
+    transition: 1s;
+}
+/* I gave a radius to the buttons */
+form > div > p > button{
+    padding: 5px;
+    border-radius: 10px;
+}
+/* The style of the footer */
+footer > p{
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
